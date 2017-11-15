@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Schedule | Northbrook Public Library</title>
+  <meta name="viewport" content="width=device-width">
+  <style>
+    html, body{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    body{
+      padding: 2rem;
+      font: 400 16px/1.5 Avenir,'Avenir LT Std';
+    }
+    header{
+      margin-bottom: 2rem;
+    }
+    header h1{
+      margin: 0;
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: #0074A0;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    header h1 > small{
+      display: inline-block;
+      margin-left: 1rem;
+      padding-left: 1rem;
+      padding-top: .5rem;
+      border-left: 2px solid #333;
+      font-weight: 400;
+      font-size: 1.75rem;
+      text-transform: none;
+    }
+    .panels{
+      display: flex;
+      margin-left: -4rem;
+    }
+    .panel{
+      margin-left: 4rem;
+    }
+
+    .one-third{
+      width: calc(33.3333% - 4rem);
+    }
+    .two-third{
+      width: calc(66.6666% - 4rem);
+    }
+    .three-thirds{
+      width: calc(100% - 4rem);
+    }
+    .schedule{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      columns: 2;
+      column-gap: 4rem;
+    }
+    .scheduled-event{
+      margin-bottom: 2rem;
+      break-inside: avoid;
+    }
+    .scheduled-event-title{
+      margin-top: 0;
+      margin-bottom: .25rem;
+    }
+    .scheduled-event-meta{
+      margin: 0;
+    }
+    .featured-event{
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      padding: 3rem 2rem 2rem;
+      background-color: #0074A0;
+      color: #fff;
+    }
+    .featured-event-label{
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .featured-event-title{
+      margin-top: 2rem;
+      margin-bottom: 0;
+      font-size: 3rem;
+      line-height: 1.1;
+      font-weight: 400;
+    }
+    .featured-event-description{
+      font-size: 1.5rem;
+    }
+    .logo{
+      position: absolute;
+      width: 8rem;
+      right: 2rem;
+      bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <h1>Today&lsquo;s Events <small>November 14, 2017</small></h1>
+  </header>
+  <main role="main">
+    <div class="panels">
+      <div class="panel two-thirds">
+        <ol class="schedule">
+          <li class="scheduled-event">
+            <h3 class="scheduled-event-title">Friends of the Library Board Meeting</h3>
+            <p class="scheduled-event-meta">10:00 am | Civic Room</p>
+          </li>
+           <li class="scheduled-event">
+            <h3 class="scheduled-event-title">Introduction to Craigslist</h3>
+            <p class="scheduled-event-meta">10:00 am | Interactive Classroom</p>
+          </li>
+           <li class="scheduled-event">
+            <h3 class="scheduled-event-title">Two-year-old Storytime (with Caregiver)</h3>
+            <p class="scheduled-event-meta">10:30 am | Youth Services</p>
+          </li>
+           <li class="scheduled-event">
+            <h3 class="scheduled-event-title">Preschool Storytime (Ages 3-5)</h3>
+            <p class="scheduled-event-meta">10:30 am | Youth Services</p>
+          </li>
+           <li class="scheduled-event">
+            <h3 class="scheduled-event-title">Tech Tuesdays</h3>
+            <p class="scheduled-event-meta">3:00 pm | 2nd Floor</p>
+          </li>
+           <li class="scheduled-event">
+            <h3 class="scheduled-event-title">Friends of the Library Board Meeting</h3>
+            <p class="scheduled-event-meta">10:00 am | Civic Room</p>
+          </li>
+           <li class="scheduled-event">
+            <h3 class="scheduled-event-title">Introduction to Craigslist</h3>
+            <p class="scheduled-event-meta">10:00 am | Interactive Classroom</p>
+          </li>
+           <li class="scheduled-event">
+            <h3 class="scheduled-event-title">Two-year-old Storytime (with Caregiver)</h3>
+            <p class="scheduled-event-meta">10:30 am | Youth Services</p>
+          </li>
+           <li class="scheduled-event">
+            <h3 class="scheduled-event-title">Preschool Storytime (Ages 3-5)</h3>
+            <p class="scheduled-event-meta">10:30 am | Youth Services</p>
+          </li>
+           <li class="scheduled-event">
+            <h3 class="scheduled-event-title">Tech Tuesdays</h3>
+            <p class="scheduled-event-meta">3:00 pm | 2nd Floor</p>
+          </li>
+        </ol>
+      </div>
+      <div class="panel one-third featured-event">
+        <span class="featured-event-label">Featured Event</span>
+        <h2 class="featured-event-title">Holiday Cooking Demo</h2>
+        <p class="featured-event-meta">7:00pm to 8:45pm<br>Pollak Room AB</p>
+        <p class="featured-event-description">Chef Dave Esau of Dave's Specialty Foods demonstrates how to make great holiday dishes! Samples will be served.</p>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo">
+    <img src="logo.png" alt="Northbrook Public Library logo" class="logo">
+  </footer>
+</body>
+</html>
